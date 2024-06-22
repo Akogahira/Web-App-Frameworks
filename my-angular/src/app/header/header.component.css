@@ -1,0 +1,14 @@
+.header-content {
+    padding: 1rem; 
+    transition: background-color 0.3s ease;
+  
+    /* Estilo para tema claro */
+    background-color: #fff; /* Color de fondo claro */
+  
+    /* Estilo para tema oscuro */
+    &.dark-background {
+      background-color: #343a40; /* Color de fondo oscuro */
+      color: #ffffff; /* Color de texto para tema oscuro */
+    }
+  }
+  

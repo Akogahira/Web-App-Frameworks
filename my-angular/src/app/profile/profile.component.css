@@ -1,0 +1,22 @@
+/* Estilos para tema oscuro */
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-theme .card {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  /* Estilos para tema claro */
+  .container {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .card {
+    background-color: #fff;
+    color: #333;
+  }
+  

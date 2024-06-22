@@ -1,8 +1,19 @@
+<!-- 
 <div class="container  mt-4">
   <footer class="footer mt-auto py-3 bg-light">
     <div class="container">
       <p class="text-muted mb-0">Contacto: contactomiapp.com</p>
       <p class="text-muted mb-0">&copy; 2024 Mi Aplicación</p>
+    </div>
+  </footer>
+</div>
+-->
+
+<div class="container mt-4">
+  <footer class="footer mt-auto py-3" [ngClass]="{'bg-light': !isDarkTheme, 'bg-dark': isDarkTheme}">
+    <div class="container">
+      <p class="mb-0">Contacto: contactomiapp.com</p>
+      <p class="mb-0">&copy; 2024 Mi Aplicación</p>
     </div>
   </footer>
 </div>

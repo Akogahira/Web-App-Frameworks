@@ -1,0 +1,12 @@
+/* Estilos para tema oscuro */
+.bg-dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Estilos para tema claro */
+  .bg-light {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  

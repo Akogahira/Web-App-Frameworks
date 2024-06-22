@@ -1,3 +1,4 @@
+<!--  
 <div class="container">
   <header>
     <h1>Bienvenido </h1>
@@ -18,3 +19,36 @@
     </nav>
   </header>
 </div>
+ -->
+
+
+<!-- -->
+<div class="container">
+  <header>
+    <div class="header-content d-flex justify-content-between align-items-center" [ngClass]="{ 'dark-background': isDarkTheme$ | async }">
+      <h1>Bienvenido</h1>
+      <!-- Botón para cambiar tema -->
+      <button class="btn btn-info text-white" (click)="toggleTheme()">Cambiar Tema</button>
+    </div>
+    <nav class="navbar navbar-expand-lg" [ngClass]="{ 'navbar-light bg-light': !(isDarkTheme$ | async), 'navbar-dark bg-dark': isDarkTheme$ | async }">
+      <div class="container-fluid">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/profile" routerLinkActive="active">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/posts" routerLinkActive="active">Publicaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/edit" routerLinkActive="active">Editar perfil</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</div>
+
+
+
+
+

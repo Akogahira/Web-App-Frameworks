@@ -1,0 +1,23 @@
+/* src/app/app.component.css */
+.container {
+    padding: 20px;
+    background-color: #fff; /* Estilo base o para tema claro */
+    color: #333; /* Color de texto para tema claro */
+  }
+  
+  .dark-theme .container {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco para fondo oscuro */
+  }
+  
+  /* Estilos adicionales para otros elementos bajo tema oscuro */
+  .dark-theme app-header {
+    background-color: #222; /* estilos para el header en tema oscuro */
+    color: #fff;
+  }
+  
+  .dark-theme app-footer {
+    background-color: #222; /* estilos para el footer en tema oscuro */
+    color: #fff;
+  }
+  
