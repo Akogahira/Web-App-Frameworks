@@ -33,6 +33,7 @@ export class ProfileComponent {
   name: string;
   email: string;
   isDarkTheme: boolean = false;
+  ImagenVisible: boolean = true;
 
   constructor(private profileService: ProfileService, private themeService: ThemeService) {
     this.name = this.profileService.getName();
@@ -42,5 +43,14 @@ export class ProfileComponent {
     this.themeService.isDarkTheme.subscribe(isDark => {
       this.isDarkTheme = isDark;
     });
+  }
+  //Cambia el texto del botón cuando se pulsa
+  get textoBoton(): string {
+    return this.ImagenVisible ? 'Ocultar foto de perfil' : 'Mostrar foto de perfil';
+  }
+
+  //Muestra-oculta la foto de perfil
+  ToggleImage() {
+    this.ImagenVisible = !this.ImagenVisible;
   }
 }

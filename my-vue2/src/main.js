@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import './directives/directives.js'; //Importar la directiva de cambio de color con hover
 
 // Importa los archivos CSS de Bootstrap y BootstrapVue
 import 'bootstrap/dist/css/bootstrap.css'

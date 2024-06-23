@@ -9,6 +9,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { PostsListComponent } from './posts-list/posts-list.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { FooterComponent } from './footer/footer.component';
+import { HighlightDirective } from './directives/highlight-directive';
 
 import { ThemeService } from './theme.service'; // Importar el servicio para cambiar de tema
 
@@ -19,7 +20,8 @@ import { ThemeService } from './theme.service'; // Importar el servicio para cam
     ProfileComponent,
     PostsListComponent,
     EditProfileComponent,
-    FooterComponent
+    FooterComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
