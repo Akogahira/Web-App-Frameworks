@@ -18,7 +18,7 @@
     <div class="card-body text-center">
       <h2 class="card-title">Perfil de usuario</h2>
       <div class="mb-3">
-        <img [hidden]="!ImagenVisible" src="../../assets/img/avatar.png" alt="Avatar" class="img-fluid rounded-circle" style="width: 150px;">
+        <img *ngIf="ImagenVisible" src="../../assets/img/avatar.png" alt="Avatar" class="img-fluid rounded-circle" style="width: 150px;">
       </div>
       <button class="btn" (click)="ToggleImage()" appHighlight [appHighlight]="{ backgroundColor: 'yellow', color: 'black', hoverColor: 'orange', hoverTextColor: 'white' }">{{textoBoton}}</button>
       <p class="card-text">Nombre: {{ name }}</p>
